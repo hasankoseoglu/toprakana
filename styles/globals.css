@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+ 
+}
+.header-top {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.header-top .contact-phone .icon {
+  color: #c19d60;
+  font-size: 35px;
+}
+.header-top .contact-phone:hover .icon,
+.header-top .contact-phone:hover span {
+  color: #c19d60;
+}
+span.phone {
+  font-weight: 800;
+}
+.home-page {
+ /* position: fixed;*/
+  background: url(../public/images/home-slide-1.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  z-index: 3;
+}
+.content h1 {
+  color: #e5ebef;  
+  
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #fff !important;
+  font-size: 10px !important;
+}
+.about_info h1{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #333;
+}
+.about_info h1::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  background: #c19d60;
+}
+footer {
+  height: 100%;
+}
